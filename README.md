@@ -63,13 +63,13 @@ Finally, install the necessary Python requirements, all of which can be found in
   ### MacOS/Linux
 
   ```
-  pip install -r requirements/requirements.txt
+  pip install -r requirements.txt
   ```
 
   ### PowerShell
 
   ```
-  pip install -r requirements\requirements.txt
+  pip install -r requirements.txt
   ```
 
 ## 5. Verify installation
