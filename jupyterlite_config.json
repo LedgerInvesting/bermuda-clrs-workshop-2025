@@ -1,0 +1,11 @@
+{
+  "LiteBuildConfig": {
+    "contents": ["notebooks"],
+    "output_dir": "dist"
+  },
+  "PipliteAddon": {
+    "piplite_urls": [
+      "https://files.pythonhosted.org/packages/py3/b/bermuda-ledger/bermuda_ledger-0.1.0-py3-none-any.whl"
+    ]
+  }
+}
