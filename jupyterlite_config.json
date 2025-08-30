@@ -1,11 +1,13 @@
 {
   "LiteBuildConfig": {
-    "contents": ["notebooks"],
+    "contents": [
+      "notebooks"
+    ],
     "output_dir": "dist"
   },
   "PipliteAddon": {
     "piplite_urls": [
-      "https://files.pythonhosted.org/packages/py3/b/bermuda-ledger/bermuda_ledger-0.1.0-py3-none-any.whl"
+      "https://raw.githubusercontent.com/LedgerInvesting/bermuda-clrs-workshop-2025/jupyterlite-setup/wheels/bermuda_ledger-2.1.15-py3-none-any.whl"
     ]
   }
 }
