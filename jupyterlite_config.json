@@ -3,7 +3,14 @@
     "contents": [
       "notebooks"
     ],
-    "output_dir": "dist"
+    "output_dir": "dist",
+    "extra_ignore_contents": [
+      ".git",
+      ".github",
+      "__pycache__",
+      "*.pyc",
+      ".DS_Store"
+    ]
   },
   "PipliteAddon": {
     "piplite_urls": [
