@@ -44,7 +44,7 @@ jobs:
           
       - name: Build landing page from README
         run: |
-          python build_landing_page_alt.py
+          python build_simple_landing.py
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
