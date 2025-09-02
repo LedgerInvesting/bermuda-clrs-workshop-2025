@@ -36,10 +36,15 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements-jupyterlite.txt
+          pip install markdown
 
       - name: Build JupyterLite
         run: |
           jupyter lite build --contents notebooks --output-dir dist
+          
+      - name: Build landing page from README
+        run: |
+          python build_landing_page_alt.py
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

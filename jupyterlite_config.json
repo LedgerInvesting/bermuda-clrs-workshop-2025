@@ -12,6 +12,9 @@
       ".DS_Store"
     ]
   },
+  "jupyter-config-data": {
+    "appUrl": "/home.html"
+  },
   "PipliteAddon": {
     "piplite_urls": [
       "https://raw.githubusercontent.com/LedgerInvesting/bermuda-clrs-workshop-2025/jupyterlite-setup/wheels/bermuda_ledger-2.1.15-py3-none-any.whl"

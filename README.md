@@ -1,109 +1,130 @@
 # Bermuda Workshop CLRS 2025
 
-Instructions here detail the steps necessary to set up your machine for the Bermuda Python package workshop. With proper installation, you will be able to run all the workshop scripts, notebooks, and related examples discussed throughout the workshop. Participants may be on any of MacOS, Windows, or Linux operating systems. Most of these operating systems will come with a pre-installed version of Python, but for the workshop you may need to install a more recent version, as discussed further below.
+## Two Ways to Participate
+
+There are **two ways** to participate in this Bermuda Python package workshop:
+
+### 1. 🌐 Browser-Based JupyterLite (Recommended for Workshop)
+
+The easiest way to get started is to use our **JupyterLite environment** that runs entirely in your browser. This requires no installation and works immediately. Access it using the launch buttons above, or visit the links directly:
+
+- **[JupyterLab](https://ledgerinvesting.github.io/bermuda-clrs-workshop-2025/lab/index.html)**: Full-featured IDE experience
+- **[Classic Notebooks](https://ledgerinvesting.github.io/bermuda-clrs-workshop-2025/notebooks.html)**: Traditional Jupyter notebook interface
+- **[Python Console](https://ledgerinvesting.github.io/bermuda-clrs-workshop-2025/consoles/index.html)**: Interactive Python environment
+
+**Note**: The JupyterLite environment is designed specifically for this workshop and includes pre-configured sample data. It will not be suitable for running Bermuda with your own data after the workshop.
+
+### 2. 💻 Local Installation (For Ongoing Use)
+
+For continued use of Bermuda beyond the workshop, or if you prefer working locally, follow the installation steps below. This method allows you to use Bermuda with your own data and provides the full flexibility of the library.
+
+---
+
+## Local Installation Instructions
+
+The following instructions detail the steps necessary to set up your local machine for the Bermuda Python package. With proper installation, you will be able to run all the workshop materials and continue using Bermuda with your own data after the workshop. Participants may be on any of MacOS, Windows, or Linux operating systems. Most of these operating systems will come with a pre-installed version of Python, but for the workshop you may need to install a more recent version, as discussed further below.
 
 The general steps are:
 
 1. Install Python 3.10 or higher
-2. Create a Python virtual environment 
+2. Create a Python virtual environment
 3. Activate the Python virtual environment
 4. Install necessary Python packages, including Bermuda
 5. Verify installation
 6. Create and link Jupyter kernel
 
-## 1. Install Python 3.10 or higher 
+## 1. Install Python 3.10 or higher
 
-Go to https://www.python.org/downloads/ and download a version of Python that is at minimum version 3.10.1. If you already have an existing Python installation that meets this criteria, you can skip this step. 
+Go to https://www.python.org/downloads/ and download a version of Python that is at minimum version 3.10.1. If you already have an existing Python installation that meets this criteria, you can skip this step.
 
 ## 2. Create a Python virtual environment
 
 Navigate to your local version of the workshop directory in your terminal (macOS or Linux) or PowerShell (Windows):
 
-  ### MacOS/Linux
+### MacOS/Linux
 
-  ```
-  cd path/to/materials
-  ```
+```
+cd path/to/materials
+```
 
-  ### PowerShell
+### PowerShell
 
-  ```
-  cd C:\path\to\materials
-  ```
+```
+cd C:\path\to\materials
+```
 
-Next, create a virtual environment named env: 
+Next, create a virtual environment named env:
 
-  ### MacOS/Linux/PowerShell
+### MacOS/Linux/PowerShell
 
-  ```
-  python -m venv env
-  ```
+```
+python -m venv env
+```
 
 ## 3. Activate the virtual environment
 
-You can then activate the virtual environment per: 
+You can then activate the virtual environment per:
 
-  ### MacOS/Linux
+### MacOS/Linux
 
-  ```
-  source env/bin/activate
-  ```
+```
+source env/bin/activate
+```
 
-  ### PowerShell
+### PowerShell
 
-  ```
-  .\env\Scripts\Activate
-  ```
-
+```
+.\env\Scripts\Activate
+```
 
 ## 4. Install necessary Python packages
 
-Finally, install the necessary Python requirements, all of which can be found in the requirements/requirements.txt file. They can all be installed with the one-liner: 
+Finally, install the necessary Python requirements, all of which can be found in the requirements/requirements.txt file. They can all be installed with the one-liner:
 
-  ### MacOS/Linux
+### MacOS/Linux
 
-  ```
-  pip install -r requirements.txt
-  ```
+```
+pip install -r requirements.txt
+```
 
-  ### PowerShell
+### PowerShell
 
-  ```
-  pip install -r requirements.txt
-  ```
+```
+pip install -r requirements.txt
+```
 
 ## 5. Verify installation
 
 To verify that installation was successful, kick off python and try importing bermuda:
 
-  ### MacOS/Linux/Windows
+### MacOS/Linux/Windows
 
-  ```
-  python
-  import bermuda as tri
-  ```
+```
+python
+import bermuda as tri
+```
 
-Next, while still in the Python interpreter, import the test data and try creating a simple triangle plot: 
+Next, while still in the Python interpreter, import the test data and try creating a simple triangle plot:
 
-  ### MacOS/Linux/Windows
+### MacOS/Linux/Windows
 
-  ```
-  from bermuda import meyers_tri
-  meyers_tri.plot_data_completeness().show()
-  ```
+```
+from bermuda import meyers_tri
+meyers_tri.plot_data_completeness().show()
+```
 
 ## 6. Create and link Jupyter kernel
 
-We will use Jupyter notebooks to interactively work through the various different bermuda features, use-cases, and exercises. All the necessary requirements are already installed per step 4, but a Jupyter kernel needs to be created and linked to the virtual environment from step 2. To do so, starting from the activated virtual environment (i.e. after step 3), run the following: 
+We will use Jupyter notebooks to interactively work through the various different bermuda features, use-cases, and exercises. All the necessary requirements are already installed per step 4, but a Jupyter kernel needs to be created and linked to the virtual environment from step 2. To do so, starting from the activated virtual environment (i.e. after step 3), run the following:
 
-  ### MacOS/Linux/PowerShell
+### MacOS/Linux/PowerShell
 
-  `python -m ipykernel install --user --name=env --display-name bermuda-clrs-2025`
+`python -m ipykernel install --user --name=env --display-name bermuda-clrs-2025`
 
-Once the kernel is installed and linked, you can open a Jupyter notebook either in your favorite IDE or in the browser per: 
-		
-  ### MacOS/Linux/PowerShell
+Once the kernel is installed and linked, you can open a Jupyter notebook either in your favorite IDE or in the browser per:
 
-  `jupyter notebook`
+### MacOS/Linux/PowerShell
 
-Once the notebook is live, select the bermuda-clrs-2025 kernel, and you will now have a notebook available with all the workshop requirements installed. Note that we will work through the notebooks in the GitHub repository linked at the top of this document. When opening each notebook for the first time, you will need to select the bermuda-clrs-2025 kernel so that requirements are available. 
+`jupyter notebook`
+
+Once the notebook is live, select the bermuda-clrs-2025 kernel, and you will now have a notebook available with all the workshop requirements installed. Note that we will work through the notebooks in the GitHub repository linked at the top of this document. When opening each notebook for the first time, you will need to select the bermuda-clrs-2025 kernel so that requirements are available.
