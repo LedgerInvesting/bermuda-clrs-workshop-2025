@@ -112,3 +112,13 @@ Once the notebook is live, select the bermuda-clrs-2025 kernel, and you will now
 ## Alternative Option
 
 If you would prefer, you can access the materials at: https://ledgerinvesting.github.io/bermuda-clrs-workshop-2025
+
+## Contact
+
+Thank you all for attending the seminar! If you'd like to contact us, you can reach your presenters at:
+
+### Kyle Safran
+kyle@ledgerinvesting.com
+
+### Brian Austin
+brian.austin@ledgerinvesting.com
