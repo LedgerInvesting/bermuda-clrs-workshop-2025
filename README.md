@@ -107,3 +107,8 @@ Once the kernel is installed and linked, you can open a Jupyter notebook either 
   `jupyter notebook`
 
 Once the notebook is live, select the bermuda-clrs-2025 kernel, and you will now have a notebook available with all the workshop requirements installed. Note that we will work through the notebooks in the GitHub repository linked at the top of this document. When opening each notebook for the first time, you will need to select the bermuda-clrs-2025 kernel so that requirements are available. 
+
+
+## Alternative Option
+
+If you would prefer, you can access the materials at: https://ledgerinvesting.github.io/bermuda-clrs-workshop-2025
